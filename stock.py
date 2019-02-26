@@ -45,3 +45,13 @@ markets[2]
 markets[3]
 markets[4]
 markets[5]
+
+import matplotlib.pyplot as plt
+import numpy as np
+import quandl
+import requests
+
+r = requests.get('https://api.robinhood.com/fundamentals/MSFT/')
+msft=r.json()
+msft
+msft['open']
